@@ -1,0 +1,108 @@
+.contact {
+  width: 80%;
+  margin: auto;
+}
+
+.form-container {
+  width: 40%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  z-index: -1;
+}
+
+.input-text {
+  width: 100%;
+  display: block;
+  border: 0;
+  background-color: none;
+  box-shadow: 3px 3px 8px 0px #001b2e;
+  border-radius: 5px;
+  border: none;
+  margin: 60px 0 60px 0;
+  padding: 10px 5px;
+  font-size: 18px;
+  color: #000;
+}
+
+.input-textarea {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  background-color: none;
+  box-shadow: 3px 3px 8px 0px #001b2e;
+  border: none;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 70px 0 60px 0;
+  z-index: 1;
+}
+
+.form-control {
+  position: relative;
+  width: 100%;
+}
+
+.form-control label {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 0;
+}
+
+.form-control input:focus + label,
+.form-control input:valid + label,
+.form-control textarea:focus + label,
+.form-control textarea:valid + label {
+  transform: translateY(-50px);
+}
+
+.input-text:focus,
+.input-text:valid {
+  outline: 0;
+}
+
+.input-textarea:focus,
+.input-textarea:valid {
+  outline: 0;
+}
+
+.message-label {
+  top: 10px !important;
+  left: 15px !important;
+}
+
+.submit {
+  background-color: #000;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+
+.submit:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: inset 0px 0px 0px 2px #0f0f0f;
+  transition: 0.4s all ease;
+}
+
+.submit:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 700px) {
+  .form-container {
+    width: 100%;
+  }
+}

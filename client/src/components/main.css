@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+h1 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 58px;
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 44px;
+  text-align: left;
+}
+
+.right {
+  width: 35%;
+  height: 100%;
+}
+
+.right ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.right li {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+}
+
+.main-link {
+  background-color: #0f0f0f;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  font-size: 58px;
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.4s all ease;
+}
+
+.main-link i {
+  align-self: center;
+  margin-left: 5px;
+}
+
+.main-link:hover {
+  transition: 0.4s all ease;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 2px #0f0f0f;
+  color: #0f0f0f;
+}
+
+.main-link p {
+  font-family: 'Raleway';
+  font-weight: 700;
+  width: 100%;
+  font-size: 28px;
+  justify-self: center;
+}
+
+.main {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+}
+
+.left {
+  width: 60%;
+  margin-right: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-basic,
+.skills-advanced {
+  display: flex;
+  margin-top: 10%;
+}
+
+.skills-basic img,
+.skills-advanced img {
+  height: 85px;
+  width: 85px;
+  margin: 20px;
+}
+
+@media (max-width: 1300px) {
+  .main h1 {
+    margin-top: 150px;
+  }
+  .skills-basic img,
+  .skills-advanced img {
+    height: 65px;
+    width: 65px;
+    margin: 10px;
+  }
+  .main-link p {
+    font-size: 18px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    margin: 0;
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 920px) {
+  .main h1 {
+    font-size: 38px;
+  }
+  .main h2 {
+    font-size: 28px;
+  }
+  .right li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .main h1 {
+    margin-top: 75px;
+  }
+  .skills-basic img,
+  .skills-advanced img {
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+    margin-top: 0;
+  }
+  .main-link {
+    height: 30px;
+    font-size: 24px;
+    line-height: 0;
+  }
+  .main-link i {
+    font-size: 35px;
+  }
+}

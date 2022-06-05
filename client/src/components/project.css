@@ -54,6 +54,8 @@
   margin-top: 3%;
   display: flex;
   flex-direction: column;
+  /* background-color: #001b2e; */
+  /* color: #fff; */
   box-shadow: 3px 5px 10px 0px #001b2e;
   border-radius: 5px;
   padding: 20px;

@@ -1,7 +1,7 @@
-import React from 'react'
-import './main.css'
-import resume from '../files/resume.pdf'
-import logos from '../images/logos/logos'
+import React from "react";
+import "./main.css";
+import resume from "../files/resume.pdf";
+import logos from "../images/logos/logos";
 
 const Main = () => {
   return (
@@ -55,7 +55,7 @@ const Main = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import './nav.css'
+import React, { useState } from "react";
+import "./nav.css";
 
 const Nav = () => {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
   return (
-    <nav className={`${toggle && 'active'}`}>
+    <nav className={`${toggle && "active"}`}>
       <ul className="desktop">
         <li>
           <a className="nav-link" href="#main">
@@ -31,7 +31,7 @@ const Nav = () => {
         <li>
           <button className="toggle-btn" onClick={() => setToggle(!toggle)}>
             {toggle ? (
-              <i className="fa-solid fa-x"></i>
+              <i className="fa-solid fa-x" aria-label="toggle menu"></i>
             ) : (
               <i className="fa-solid fa-bars" aria-label="toggle menu"></i>
             )}
@@ -59,7 +59,7 @@ const Nav = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

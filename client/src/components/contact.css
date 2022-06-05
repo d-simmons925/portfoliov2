@@ -16,6 +16,8 @@
   display: block;
   border: 0;
   background-color: none;
+  /* background-color: #001b2e;
+  color: #fff; */
   box-shadow: 3px 3px 8px 0px #001b2e;
   border-radius: 5px;
   border: none;
@@ -34,7 +36,8 @@
   background-color: none;
   box-shadow: 3px 3px 8px 0px #001b2e;
   border: none;
-  color: #000;
+  /* background-color: #001b2e;
+  color: #fff; */
   padding: 5px;
   border-radius: 5px;
   margin: 70px 0 60px 0;
@@ -48,6 +51,7 @@
 
 .form-control label {
   position: absolute;
+  /* color: #fff; */
   top: 5px;
   left: 5px;
   font-size: 24px;
@@ -61,6 +65,7 @@
 .form-control textarea:focus + label,
 .form-control textarea:valid + label {
   transform: translateY(-50px);
+  /* color: #000; */
 }
 
 .input-text:focus,

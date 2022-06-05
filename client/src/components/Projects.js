@@ -1,9 +1,9 @@
 import React from 'react'
 import './projects.css'
 import Project from './Project'
-import drawTogether from '../images/drawTogether.png'
-import mernCalendar from '../images/mernCalendar.png'
-import pokemonTCG from '../images/pokemonTCG.png'
+import drawTogether from '../images/drawTogether.webp'
+import mernCalendar from '../images/mernCalendar.webp'
+import pokemonTCG from '../images/pokemonTCG.webp'
 
 export const Projects = () => {
   return (

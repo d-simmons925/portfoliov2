@@ -1,18 +1,18 @@
-import './App.css'
-import { useState } from 'react'
-import Nav from './components/nav.js'
-import Main from './components/Main'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Particles from 'react-tsparticles'
+import "./App.css";
+import React, { useState } from "react";
+import Nav from "./components/nav.js";
+import Main from "./components/Main";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Particles from "react-tsparticles";
 
 function App() {
-  const [msg, setMsg] = useState(null)
-  const onDismiss = () => setMsg(null)
-  const handleMsg = data => {
-    setMsg(data)
-  }
+  const [msg, setMsg] = useState(null);
+  const onDismiss = () => setMsg(null);
+  const handleMsg = (data) => {
+    setMsg(data);
+  };
   return (
     <div className="App">
       <Particles
@@ -20,10 +20,10 @@ function App() {
         options={{
           background: {
             color: {
-              value: '#f3f3f3',
+              value: "#f3f3f3",
             },
           },
-          fpsLimit: 120,
+          fpsLimit: 60,
           interactivity: {
             events: {
               resize: true,
@@ -46,7 +46,7 @@ function App() {
           },
           particles: {
             links: {
-              color: '#208AAE',
+              color: "#208AAE",
               distance: 150,
               enable: true,
               opacity: 0.4,
@@ -56,9 +56,9 @@ function App() {
               enable: true,
             },
             move: {
-              direction: 'none',
+              direction: "none",
               enable: true,
-              outMode: 'out',
+              outMode: "out",
               random: false,
               speed: 1.25,
               straight: false,
@@ -75,7 +75,7 @@ function App() {
               value: 0.5,
             },
             shape: {
-              type: 'circle',
+              type: "circle",
             },
             size: {
               value: 0,
@@ -87,7 +87,7 @@ function App() {
       <Nav />
 
       <div className="content">
-        {msg && msg.type === 'success' && (
+        {msg && msg.type === "success" && (
           <div className="alert success">
             <p>{msg.msg}</p>
             <button className="close" onClick={onDismiss}>
@@ -95,7 +95,7 @@ function App() {
             </button>
           </div>
         )}
-        {msg && msg.type === 'error' && (
+        {msg && msg.type === "error" && (
           <div className="alert error">
             <p>{msg.msg}</p>
             <button className="close" onClick={onDismiss}>
@@ -109,7 +109,7 @@ function App() {
         <Contact handleMsg={handleMsg} />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

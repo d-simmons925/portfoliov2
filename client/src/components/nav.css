@@ -28,6 +28,7 @@
 
 .nav-link:hover {
   color: #0f0f0f;
+  background-color: #f3f3f3;
   box-shadow: inset 100pc 0 0 0 #f3f3f3;
 }
 

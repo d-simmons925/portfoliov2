@@ -1,14 +1,14 @@
-import React from 'react'
-import './projects.css'
-import Project from './Project'
-import drawTogether from '../images/drawTogether.webp'
-import mernCalendar from '../images/mernCalendar.webp'
-import pokemonTCG from '../images/pokemonTCG.webp'
+import React from "react";
+import styles from "../styles/projects.module.css";
+import Project from "./Project";
+import drawTogether from "../images/drawTogether.webp";
+import mernCalendar from "../images/mernCalendar.webp";
+import pokemonTCG from "../images/pokemonTCG.webp";
 
 export const Projects = () => {
   return (
-    <div id="projects" className="projects">
-      <div className="projects-header">
+    <div id="projects" className={styles.projects}>
+      <div className={styles.projectsHeader}>
         <h1>Projects</h1>
       </div>
       <Project
@@ -33,7 +33,7 @@ export const Projects = () => {
         desc="This project uses a web api to get data about pokemon cards and displays data about each card relating to what the user searches for. This project is also responsive and works on mobile devices."
       />
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

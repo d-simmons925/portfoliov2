@@ -9,7 +9,6 @@ const Main = () => {
       <div className={styles.left}>
         <h1>David Simmons</h1>
         <h2>Web Developer</h2>
-        <hr />
         <div className={styles.skillsBasic}>
           <img src={logos.HTML} alt="HTML" />
           <img src={logos.CSS} alt="CSS" />
